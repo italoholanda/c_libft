@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 17:47:48 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/19 18:06:34 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/08/19 18:08:23 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ void	*memcpy(void *dest, const void *src, size_t n)
 		new_dest[i] = new_src[i];
 		++i;
 	}
+	return(dest);
 }
