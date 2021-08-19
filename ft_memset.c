@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/19 16:45:17 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/19 16:57:32 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/19 11:00:06 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/19 11:03:57 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
-int ft_isalpha(int c)
+void	*ft_memset(void *mem, int byte, size_t len)
 {
-	if ((c < 'A' && c > 'Z') || (c < 'a' && c > 'z'))
-		return (0);
-	return (1);
+	char	*new_mem;
+	size_t	iterator;
+
+	new_mem = mem;
+	iterator = 0;
+	while(iterator < len)
+	{
+		new_mem[iterator] = (unsigned char)byte;
+		++iterator;
+	}
+	return(mem);
 }

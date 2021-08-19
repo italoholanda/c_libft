@@ -1,8 +1,21 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/19 16:45:39 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/19 17:00:05 by igomes-h         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int	ft_isdigit(char *input)
+#include <unistd.h>
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
-	if (input < '0' || input > '9')
+	if (c < '0' || c > '9')
 		return (0);
 	return (1);
 }

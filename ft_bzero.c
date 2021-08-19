@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/19 16:45:17 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/19 16:57:32 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/19 10:48:17 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/19 17:13:21 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
-int ft_isalpha(int c)
+void	ft_bzero(void *mem, size_t n)
 {
-	if ((c < 'A' && c > 'Z') || (c < 'a' && c > 'z'))
-		return (0);
-	return (1);
+	ft_memset(mem, 0, n);
 }
