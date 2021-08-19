@@ -6,14 +6,14 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 16:45:17 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/19 16:57:32 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/08/19 17:27:49 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c < 'A' && c > 'Z') || (c < 'a' && c > 'z'))
 		return (0);

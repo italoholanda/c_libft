@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:06 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/19 11:03:57 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/08/19 17:28:45 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ void	*ft_memset(void *mem, int byte, size_t len)
 
 	new_mem = mem;
 	iterator = 0;
-	while(iterator < len)
+	while (iterator < len)
 	{
 		new_mem[iterator] = (unsigned char)byte;
 		++iterator;
 	}
-	return(mem);
+	return (mem);
 }

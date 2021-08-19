@@ -1,4 +1,5 @@
 main
 main.c
 tests/
-*.out
+a.out
+.gitignore
