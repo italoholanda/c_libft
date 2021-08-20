@@ -6,12 +6,12 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 17:47:48 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/19 18:08:23 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/08/20 09:03:40 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void	*memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	int		i;
 	char	*new_dest;
