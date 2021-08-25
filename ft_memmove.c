@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 09:13:10 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/23 10:28:12 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/08/25 15:55:39 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dest,	const void *src, size_t	n)
 {
-	int		i;
+	size_t			i;
 	unsigned char	*new_dest;
 	unsigned char	*new_src;
 	char	buffer[n];
