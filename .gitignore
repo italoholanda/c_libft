@@ -2,6 +2,7 @@ main
 main.c
 tests/
 a.out
+*.o
 ft_bzero.o
 ft_isalnum.o
 ft_isalpha.o
@@ -13,3 +14,4 @@ ft_memset.o
 ft_strlcpy.o
 ft_strlen.o
 main.o
+run
