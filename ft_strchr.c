@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/19 11:00:06 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/26 16:23:52 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/30 11:50:52 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/30 11:52:23 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memset(void *mem, int byte, size_t len)
+char	*ft_strchr(const char *s, int c)
 {
-	char	*new_mem;
-	size_t	iterator;
+	char	*str;
 
-	new_mem = mem;
-	iterator = 0;
-	while (iterator < len)
+	str = (char *)s;
+	while (*str != c)
 	{
-		new_mem[iterator] = (unsigned char)byte;
-		++iterator;
+		if (!*str)
+			return (0);
+		++str;
 	}
-	return (mem);
+	return (str);
 }

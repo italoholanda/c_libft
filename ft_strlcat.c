@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/19 11:00:06 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/26 16:23:52 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/30 10:42:24 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/30 11:33:43 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *mem, int byte, size_t len)
+size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
-	char	*new_mem;
-	size_t	iterator;
+	unsigned int	i;
+	unsigned int	j;
 
-	new_mem = mem;
-	iterator = 0;
-	while (iterator < len)
+	i = ft_strlen(dst);
+	j = 0;
+	while(src[j] && j < size)
 	{
-		new_mem[iterator] = (unsigned char)byte;
-		++iterator;
+		dst[i+j] = src[i];
+		j++;
 	}
-	return (mem);
+	return (ft_strlen(src) + (i+j));
 }

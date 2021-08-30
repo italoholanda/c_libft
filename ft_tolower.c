@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/19 11:00:06 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/26 16:23:52 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/30 11:47:18 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/30 11:48:57 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_memset(void *mem, int byte, size_t len)
+int ft_tolower(int c)
 {
-	char	*new_mem;
-	size_t	iterator;
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 
-	new_mem = mem;
-	iterator = 0;
-	while (iterator < len)
-	{
-		new_mem[iterator] = (unsigned char)byte;
-		++iterator;
-	}
-	return (mem);
 }

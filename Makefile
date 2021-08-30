@@ -11,6 +11,11 @@ FILES = ft_bzero.c \
 		ft_memset.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
+		ft_strlcat.c \
+		ft_toupper.c \
+		ft_tolower.c \
+		ft_strchr.c \
+		ft_strrchr.c \
 		main.c \
 
 OBJ = $(FILES:%.c=%.o)
