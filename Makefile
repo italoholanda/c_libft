@@ -25,14 +25,14 @@ CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 
 # MAKE STATIC LIBRARY
-MKLIB = ar -rcs $(NAME)
+MKLIB = ar -rcs
 
 # DEFAULT MAKE EXECUTION
 all: $(SOURCES) $(OBJECTS) $(NAME)
 
 # MAKE STATIC LIBRARY EXECUTION
 $(NAME):
-	$(MKLIB) $(NAME)
+	$(MKLIB) $(NAME) $(OBJECTS)
 
 # CLEAN ALL OBJECTS
 clean:
@@ -40,7 +40,9 @@ clean:
 
 # CLEAN ALL OBJECTS AND STATIC LIBRARY
 fclean:
-	$(RM) $(OBJECTS} $(NAME}
+	$(RM) $(OBJECTS) $(NAME)
 
 # CLEAN ALL AND RECOMPILE
-re: fclean all
+re:
+	make fclean
+	make all
