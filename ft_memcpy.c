@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 17:47:48 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/31 17:51:25 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 13:00:25 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*new_dest;
 	unsigned char	*new_src;
 
-	i = 0;
+	if (!dest && !src)
+		return (dest);
 	new_dest = (unsigned char *)dest;
 	new_src = (unsigned char *)src;
+	i = 0;
 	while (i < n)
 	{
 		new_dest[i] = new_src[i];
