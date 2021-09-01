@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 10:13:05 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 11:26:10 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,13 @@ int		ft_isdigit(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(char *str);
+char	*strdup(const char *s);
 size_t	ft_strlen(const char *str);
 void	ft_bzero(void *mem, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-void	*calloc(size_t nmemb, size_t size);
 void 	*ft_memchr(const void *s, int c, size_t n);
+void	*calloc(size_t indexes, size_t index_size);
 void	*ft_memset(void *mem, int byte, size_t len);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
