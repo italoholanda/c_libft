@@ -6,11 +6,9 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 17:39:51 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 11:28:04 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 18:30:01 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 #include "libft.h"
 
