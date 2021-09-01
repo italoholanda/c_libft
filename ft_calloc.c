@@ -6,13 +6,13 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 10:10:35 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 11:26:56 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 15:24:00 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t indexes, size_t index_size)
+void	*ft_calloc(size_t indexes, size_t index_size)
 {
 	void	*ptr;
 
