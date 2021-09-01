@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 16:45:04 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 18:47:05 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 19:57:51 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c <= 'A' && c >= 'Z')
-		|| (c <= 'a' && c >= 'z')
-		|| (c <= '0' && c >= '9'))
-		return (1);
-	return (0);
+	return (ft_isdigit(c) || ft_isalpha(c));
 }
