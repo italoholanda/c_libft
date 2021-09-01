@@ -25,7 +25,7 @@ CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 
 # MAKE STATIC LIBRARY
-MKLIB = ar -rc
+MKLIB = ar -rcs
 
 # DEFAULT MAKE EXECUTION
 all: ${SOURCES} ${OBJECTS} ${NAME}
