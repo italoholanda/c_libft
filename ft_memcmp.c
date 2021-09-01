@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 13:52:09 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 12:50:02 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 18:57:10 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	unsigned char	*n_s1;
 	unsigned char	*n_s2;
 
+	i = 0;
 	n_s1 = (unsigned char *)s1;
 	n_s2 = (unsigned char *)s2;
 	while ((n_s1[i] || n_s2[i]) && i < n)
