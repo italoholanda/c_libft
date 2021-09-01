@@ -6,11 +6,23 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 21:41:25 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 10:08:28 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/01 20:11:14 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	ft_isspace(char c)
+{
+	if ((c == '\n')
+		|| (c == '\t')
+		|| (c == '\v')
+		|| (c == '\f')
+		|| (c == '\r')
+		|| (c == ' '))
+		return (1);
+	return (0);
+}
 
 int	ft_atoi(char *str)
 {
@@ -19,7 +31,7 @@ int	ft_atoi(char *str)
 	int	response;
 
 	i = 0;
-	while (str[i] <= ' ' || str[i] > '~')
+	while (ft_isspace(str[i]))
 		i++;
 	signal = 1;
 	while (str[i] == '+' || str[i] == '-')
