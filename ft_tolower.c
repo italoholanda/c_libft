@@ -6,14 +6,13 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 11:47:18 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/30 11:48:57 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/08/31 18:01:10 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;
 	return (c);
-
 }

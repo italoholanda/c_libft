@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 10:42:24 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/31 17:52:34 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/31 21:41:25 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/31 21:41:29 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int	ft_atoi(char *str)
 {
-	unsigned int	i;
-	unsigned int	j;
+	int	i;
+	int	signal;
+	int	response;
 
-	i = ft_strlen(dst);
-	j = 0;
-	while (src[j] && j < size)
+	i = 0;
+	while (str[i] <= ' ' || str[i] > '~')
+		i++;
+	signal = 1;
+	while (str[i] == '+' || str[i] == '-')
 	{
-		dst[i + j] = src[i];
-		j++;
+		if (str[i] == '-')
+			signal *= -1;
+		i++;
 	}
-	return (ft_strlen(src) + (i + j));
+	response = 0;
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		response = (str[i] - 48) + (response * 10);
+		i++;
+	}
+	return (response * signal);
 }

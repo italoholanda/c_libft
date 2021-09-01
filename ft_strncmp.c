@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strncpm.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 10:42:24 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/31 17:52:34 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/30 13:00:18 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/30 13:10:41 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
-	unsigned int	j;
 
-	i = ft_strlen(dst);
-	j = 0;
-	while (src[j] && j < size)
+	i = 0;
+	while ((s1[i] || s2[i]) && i < n)
 	{
-		dst[i + j] = src[i];
-		j++;
+		if (s1[i] < s2[i])
+			return (-1);
+		if (s1[i] > s2[i])
+			return (1);
+		i++;
 	}
-	return (ft_strlen(src) + (i + j));
+	return (0);
 }

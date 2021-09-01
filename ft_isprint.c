@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 10:42:24 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/31 17:52:34 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/31 13:58:45 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/31 14:00:30 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+int	ft_iprint(int c)
 {
-	unsigned int	i;
-	unsigned int	j;
-
-	i = ft_strlen(dst);
-	j = 0;
-	while (src[j] && j < size)
-	{
-		dst[i + j] = src[i];
-		j++;
-	}
-	return (ft_strlen(src) + (i + j));
+	if (c > 32 && c < 127)
+		return (1);
+	return (0);
 }

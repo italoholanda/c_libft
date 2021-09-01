@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 10:42:24 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/08/31 17:52:34 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/08/30 13:28:51 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/08/31 17:49:46 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned int	i;
-	unsigned int	j;
+	unsigned char	*str;
 
-	i = ft_strlen(dst);
-	j = 0;
-	while (src[j] && j < size)
+	i = 0;
+	str = (unsigned char *)s;
+	while (str[i] && i < n)
 	{
-		dst[i + j] = src[i];
-		j++;
+		if (str[i] == c)
+			return (str + i);
+		i++;
 	}
-	return (ft_strlen(src) + (i + j));
+	return (0);
 }
