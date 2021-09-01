@@ -1,38 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/31 21:41:25 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 10:08:28 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/09/01 11:17:45 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/09/01 11:21:27 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+char	*strdup(const char *s)
 {
-	int	i;
-	int	signal;
-	int	response;
+	char	*new_str;
+	int		i;
 
-	i = 0;
-	while (str[i] <= ' ' || str[i] > '~')
-		i++;
-	signal = 1;
-	while (str[i] == '+' || str[i] == '-')
+	new_str = malloc(sizeof(s));
+	while(s[i])
 	{
-		if (str[i] == '-')
-			signal *= -1;
-		i++;
+		new_str[i] = s[i];
+		++i;
 	}
-	response = 0;
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		response = (str[i] - '0') + (response * 10);
-		i++;
-	}
-	return (response * signal);
+	return (new_str);
 }

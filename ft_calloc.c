@@ -1,38 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/31 21:41:25 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 10:08:28 by igomes-h         ###   ########.fr       */
+/*   Created: 2021/09/01 10:10:35 by igomes-h          #+#    #+#             */
+/*   Updated: 2021/09/01 10:39:19 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+void	*calloc(size_t indexes, size_t index_size)
 {
-	int	i;
-	int	signal;
-	int	response;
+	void *ptr;
 
-	i = 0;
-	while (str[i] <= ' ' || str[i] > '~')
-		i++;
-	signal = 1;
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			signal *= -1;
-		i++;
-	}
-	response = 0;
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		response = (str[i] - '0') + (response * 10);
-		i++;
-	}
-	return (response * signal);
+	if (!indexes || !index_size)
+		return (0);
+	ptr = malloc(indexes * index_size);
+	ft_bzero(ptr, indexes * index_size);
+	return (ptr);
 }
