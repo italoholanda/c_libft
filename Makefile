@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/09/04 13:39:36 by igomes-h          #+#    #+#              #
+#    Updated: 2021/09/06 11:22:58 by igomes-h         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # STATIC LIBRARY NAME
 NAME = libft.a
 
@@ -13,7 +25,7 @@ SOURCES = \
 	ft_strdup.c ft_memcmp.c
 
 # OBJECTS FILES (*.o)
-OBJECTS= $(SOURCES:.c=.o)
+OBJECTS = $(SOURCES:.c=.o)
 
 # DEFAULT C COMPILER
 CC = gcc

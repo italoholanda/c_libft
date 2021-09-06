@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/01 17:43:27 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/02 15:18:04 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,78 +15,78 @@
 # include <stdlib.h>
 
 /*
-\ ft_isprint(int c), is a function that's verify if the int is a printable char.
+* ft_isprint(int c), is a function that's verify if the int is a printable char.
 */
 int		ft_isprint(int c);
 /*
-\ ft_isalnum(int c), is a function that's verify if the int is a
-\ alpha-numeric char.
+* ft_isalnum(int c), is a function that's verify if the int is a
+* alpha-numeric char.
 */
 int		ft_isalnum(int c);
 /*
-\ ft_isalpha(int c), is a function that's verify if the int is a alphabetc char.
+* ft_isalpha(int c), is a function that's verify if the int is a alphabetc char.
 */
 int		ft_isalpha(int c);
 /*
-\ ft_isascii(int c), is a function that's verify if the int exists in the ASCII
-\ table.
+* ft_isascii(int c), is a function that's verify if the int exists in the ASCII
+* table.
 */
 int		ft_isascii(int c);
 /*
-\ ft_isdigit(int c), is a function that's verify if the int is a digit char.
+* ft_isdigit(int c), is a function that's verify if the int is a digit char.
 */
 int		ft_isdigit(int c);
 /*
-\ ft_toupper(int c), is a function that transforms a lowercase character into
-\ an uppercase. If input is a lowercase character, this will return an uppercase
-\ character. If not, it will return the char untouched.
+* ft_toupper(int c), is a function that transforms a lowercase character into
+* an uppercase. If input is a lowercase character, this will return an uppercase
+* character. If not, it will return the char untouched.
 */
 int		ft_toupper(int c);
 /*
-\ ft_tolower(int c), is a function that transforms an uppercase character into
-\ a lowercase. If input is an uppercase character, this will return a lowercase
-\ character. If not, it will return the char untouched.
+* ft_tolower(int c), is a function that transforms an uppercase character into
+* a lowercase. If input is an uppercase character, this will return a lowercase
+* character. If not, it will return the char untouched.
 */
 int		ft_tolower(int c);
 /*
-\ ft_atoi(char *str), is a function that transforms a string number to a int
-\ number. The function will ignore spaces and tabs before the number and will
-\ automatically calculate your signal, such as "   +-++-548".
-\ This will return an int based in the input string.
+* ft_atoi(char *str), is a function that transforms a string number to a int
+* number. The function will ignore spaces and tabs before the number and will
+* automatically calculate your signal, such as "   +-++-548".
+* This will return an int based in the input string.
 */
 int		ft_atoi(char *str);
 /*
-\ *ft_strdup(const char *s), is a function that will duplicate a string and
-\ return a pointer to the new string.
+* *ft_strdup(const char *s), is a function that will duplicate a string and
+* return a pointer to the new string.
 */
 char	*ft_strdup(const char *s);
 /*
-\ *ft_strchr(const char *s, int c), is a function that will find the first
-\ occurrence of the input char (c) in the input string (s) and return a pointer
-\ for this.
+* *ft_strchr(const char *s, int c), is a function that will find the first
+* occurrence of the input char (c) in the input string (s) and return a pointer
+* for this.
 */
 char	*ft_strchr(const char *s, int c);
 /*
-\ *ft_strrchr(const char *s, int c), is a function that will find the last
-\ occurrence of the input char (c) in the input string (s) and return a pointer
-\ for this.
+* *ft_strrchr(const char *s, int c), is a function that will find the last
+* occurrence of the input char (c) in the input string (s) and return a pointer
+* for this.
 */
 char	*ft_strrchr(const char *s, int c);
 /*
-\ *ft_strnstr(const char *big_s, const char *short_s, size_t len), is a function
-\ that will find the first occurrence of the input string (short_s) in the input
-\ string (big_s) and return a pointer for his first character.
+* *ft_strnstr(const char *big_s, const char *short_s, size_t len), is a function
+* that will find the first occurrence of the input string (short_s) in the input
+* string (big_s) and return a pointer for his first character.
 */
 char	*ft_strnstr(const char *big_s, const char *short_s, size_t len);
 /*
-\ ft_strncmp(char *s1, char *s2, unsigned int n), is a function that compares
-\ the first (n) bytes of the input strings (s1 and s2) and, if find a different
-\ char, returns the difference of their index values in the ASCII table.
+* ft_strncmp(char *s1, char *s2, unsigned int n), is a function that compares
+* the first (n) bytes of the input strings (s1 and s2) and, if find a different
+* char, returns the difference of their index values in the ASCII table.
 */
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 /*
-\ ft_strlen(const char *str), is a function that will count the number of chars
-\ in the input string.
+* ft_strlen(const char *str), is a function that will count the number of chars
+* in the input string.
 */
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
