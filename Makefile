@@ -6,7 +6,7 @@
 #    By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/04 13:39:36 by igomes-h          #+#    #+#              #
-#    Updated: 2021/09/06 11:22:58 by igomes-h         ###   ########.fr        #
+#    Updated: 2021/09/06 14:02:14 by igomes-h         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ SOURCES = \
 	ft_toupper.c ft_tolower.c ft_strchr.c \
 	ft_strrchr.c ft_strncmp.c ft_memchr.c \
 	ft_strnstr.c ft_atoi.c ft_calloc.c \
-	ft_strdup.c ft_memcmp.c
+	ft_strdup.c ft_memcmp.c \
+	ft_substr.c
 
 # OBJECTS FILES (*.o)
 OBJECTS = $(SOURCES:.c=.o)
