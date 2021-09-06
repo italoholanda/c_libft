@@ -6,3 +6,4 @@ a.out
 run
 war-machine/
 .gitignore
+*copy.c

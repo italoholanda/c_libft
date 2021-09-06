@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/06 14:00:51 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/06 14:14:51 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,10 +88,11 @@ int		ft_strncmp(char *s1, char *s2, unsigned int n);
 * ft_strlen(const char *str), is a function that will count the number of chars
 * in the input string.
 */
-char	*ft_substr(char const *s, unsigned int start, size_t len);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 // (MEM) FUNCTIONS
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_bzero(void *mem, size_t n);
