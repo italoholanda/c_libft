@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/06 14:14:51 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/06 20:38:02 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 // (MEM) FUNCTIONS
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_bzero(void *mem, size_t n);
