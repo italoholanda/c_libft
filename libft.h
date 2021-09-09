@@ -6,13 +6,14 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/06 20:38:02 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/09 11:46:02 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
+# include <unistd.h>
 
 /*
 * ft_isprint(int c), is a function that's verify if the int is a printable char.
@@ -94,7 +95,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-// (MEM) FUNCTIONS
+char	**ft_split(char const *str, char breaker);
+char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_bzero(void *mem, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
