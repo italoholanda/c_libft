@@ -1,9 +1,0 @@
-main
-main.c
-tests/
-a.out
-*.o
-run
-war-machine/
-.gitignore
-*copy.c
