@@ -6,62 +6,65 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 14:03:11 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/09 10:01:16 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/09 15:58:12 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	breaker_ctr(char const *str, char breaker)
+static int	breaker_ctr(const char *s, char breaker)
 {
-	unsigned int	s_len;
+	unsigned int	i;
 	unsigned int	b_len;
-	int				is_valid;
 
-	s_len = 0;
+	i = 0;
 	b_len = 0;
-	is_valid = 0;
-	while (str[s_len])
+	while (s[i])
 	{
-		if (str[s_len] == breaker && is_valid)
+		if (s[i] == breaker)
+			i++;
+		else
 		{
-			is_valid = 0;
+			while (s[i] != breaker && s[i])
+				i++;
 			b_len++;
 		}
-		else
-			is_valid = 1;
-		s_len++;
 	}
-	if (str[s_len] == breaker)
-		b_len--;
 	return (b_len);
 }
 
-char	**ft_split(char const *s, char c)
+char	**fill_table(char const *s, char breaker, char **table)
 {
-	char			**table;
 	unsigned int	i;
 	unsigned int	j;
-	unsigned int	a;
+	unsigned int	k;
 
-	table = (char **) ft_calloc(breaker_ctr(s, c) + 1, sizeof(char *));
 	i = 0;
-	a = -1;
+	k = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == breaker)
 			i++;
 		else
 		{
 			j = 0;
-			while (s[i] != c && s[i])
+			while (s[i] != breaker && s[i])
 			{
 				i++;
 				j++;
 			}
-			table[++a] = (char *) ft_calloc(j + 1, sizeof(char));
-			ft_strlcpy(table[a], &s[i - j], j + 1);
+			table[k] = (char *)ft_calloc(j + 1, sizeof(char));
+			ft_strlcpy(table[k], &s[i - j], j + 1);
+			k++;
 		}
 	}
 	return (table);
+}
+
+char	**ft_split(char const *s, char breaker)
+{
+	char	**table;
+
+	table = (char **)ft_calloc(breaker_ctr(s, breaker) + 1, sizeof(char *));
+	return (fill_table(s, breaker, table));
 }
