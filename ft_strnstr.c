@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 17:39:51 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/11 10:56:51 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/11 11:00:57 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	little_len;
 	size_t	i;
 
-	if (!(*little) || !(*big) || (ft_strlen(big) < len))
+	if (!(*little))
 		return ((char *)big);
 	i = 0;
 	little_len = ft_strlen(little);
