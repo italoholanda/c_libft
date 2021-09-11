@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 14:03:11 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/09 15:58:12 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/11 10:35:03 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,8 @@ char	**ft_split(char const *s, char breaker)
 {
 	char	**table;
 
+	if (!*s || !breaker)
+		return (0);
 	table = (char **)ft_calloc(breaker_ctr(s, breaker) + 1, sizeof(char *));
 	return (fill_table(s, breaker, table));
 }
