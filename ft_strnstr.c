@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 17:39:51 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/11 10:53:37 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/11 10:56:51 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	little_len = ft_strlen(little);
 	while (*big && (i < len))
 	{
-		if ((ft_strncmp(big, little, little_len) == 0)
+		if ((ft_strncmp((char *)big, (char *)little, little_len) == 0)
 			&& (i + little_len <= len))
 			return ((char *)big);
 		big++;
