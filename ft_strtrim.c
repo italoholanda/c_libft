@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 16:39:19 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/07 15:06:51 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/13 10:41:33 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	len;
 
-	if (s1 == NULL || set == NULL)
-		return (NULL);
+	if (!s1 || !set)
+		return (0);
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
 	len = ft_strlen(s1);
