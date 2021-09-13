@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 21:41:25 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/02 08:55:03 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/13 10:49:58 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,13 +41,10 @@ int	ft_atoi(char *str)
 			signal = -1;
 		i++;
 	}
-	if (ft_isdigit(str[i]))
+	while (ft_isdigit(str[i]))
 	{
-		while (ft_isdigit(str[i]))
-		{
-			response = (str[i] - '0') + (response * 10);
-			i++;
-		}
+		response = (str[i] - '0') + (response * 10);
+		i++;
 	}
 	return (response * signal);
 }
