@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 14:03:11 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/11 10:38:31 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 11:45:23 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	breaker_ctr(const char *s, char breaker)
 	return (b_len);
 }
 
-char	**fill_table(char const *s, char breaker, char **table)
+static char	**fill_table(char const *s, char breaker, char **table)
 {
 	unsigned int	i;
 	unsigned int	j;

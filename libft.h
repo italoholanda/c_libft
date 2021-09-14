@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/11 10:18:01 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 11:46:10 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int		ft_tolower(int c);
 * automatically calculate your signal, such as "   +-++-548".
 * This will return an int based in the input string.
 */
-int		ft_atoi(char *str);
+int		ft_atoi(const char *str);
 /*
 * *ft_strdup(const char *s), is a function that will duplicate a string and
 * return a pointer to the new string.
@@ -84,7 +84,7 @@ char	*ft_strnstr(const char *big_s, const char *short_s, size_t len);
 * the first (n) bytes of the input strings (s1 and s2) and, if find a different
 * char, returns the difference of their index values in the ASCII table.
 */
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(char *s1, const char *s2, unsigned int n);
 /*
 * ft_strlen(const char *str), is a function that will count the number of chars
 * in the input string.
