@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 11:00:16 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/14 11:55:17 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 11:56:29 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ char	*ft_strnstr(const char *big_s, const char *short_s, size_t len);
 * the first (n) bytes of the input strings (s1 and s2) and, if find a different
 * char, returns the difference of their index values in the ASCII table.
 */
-int	ft_strncmp(const char *s1, const char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, unsigned int n);
 /*
 * ft_strlen(const char *str), is a function that will count the number of chars
 * in the input string.
