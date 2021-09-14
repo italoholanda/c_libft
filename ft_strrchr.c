@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 11:50:52 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/14 12:20:54 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 12:48:42 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,15 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*str;
-	char	*address;
-	char	char_c;
+	int		leng;
 
-	char_c = (unsigned char)c;
-	if (char_c == 0)
-		return ((char *)s + ft_strlen(s));
-	address = 0;
 	str = (char *)s;
-	while (*str)
+	leng = ft_strlen(s);
+	while (leng >= 0)
 	{
-		if (*str == char_c)
-			address = str;
-		str++;
+		if (str[leng] == (char)c)
+			return (&str[leng]);
+		leng--;
 	}
-	return (address);
+	return (0);
 }
