@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 11:28:46 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/06 14:04:44 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 14:41:35 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	j;
 	char	*sub_string;
 
-	sub_string = malloc(len + 1);
+	sub_string = malloc(sizeof(char) * len + 1);
 	if (!sub_string)
 		return (0);
 	i = 0;
