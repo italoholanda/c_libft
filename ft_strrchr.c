@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 11:50:52 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/02 13:23:10 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 12:09:51 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 	str = (char *)s;
 	while (*str)
 	{
-		if (*str == c)
+		if (*str == (char)c)
 			address = str;
 		str++;
 	}
