@@ -6,7 +6,7 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/08 22:02:35 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/09 10:48:21 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 11:48:26 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static char	*get_string(char *str, size_t size, size_t num, int is_negative)
 	return (str);
 }
 
-size_t	num_counter(int num)
+static size_t	num_counter(int num)
 {
 	size_t	len;
 

@@ -6,13 +6,13 @@
 /*   By: igomes-h <italogholanda@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 14:07:05 by igomes-h          #+#    #+#             */
-/*   Updated: 2021/09/13 10:36:26 by igomes-h         ###   ########.fr       */
+/*   Updated: 2021/09/14 11:49:14 by igomes-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(const char *s1, const char *s2, char *new_str)
+static char	*ft_strcat(const char *s1, const char *s2, char *new_str)
 {
 	size_t	i;
 	size_t	j;
