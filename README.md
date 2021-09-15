@@ -1,13 +1,22 @@
 # Libft
 In this project, I recoded some functions of the C standard library as well as some other utility functions.
 
-## Content
-
-- **Part 01:** In this first part, I re-coded a set of libc functions as defined in your `man`. The functions have the same prototype and behavior as the originals <a href="https://www.freebsd.org/cgi/man.cgi">(BSD).</a>
-
-- **Part 02:** In this second part, I coded a set of functions that are not included in libc or are included in a different form.
-
 ## Part 01
+
+In this first part, I re-coded a set of libc functions as defined in your `man`. The functions have the same prototype and behavior as the originals <a href="https://www.freebsd.org/cgi/man.cgi">(BSD).</a>
+
+```
+• isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • memcpy • memmove • strlcpy • strlcat
+• toupper • tolower • strchr • strrchr • strncmp • memchr • memcmp • strnstr • atoi
+```
+
+## Part 02
+
+In this second part, I coded a set of functions that are not included in libc or are included in a different form.
+
+```
+• substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd
+```
 
 ### String manipulation functions
 
@@ -68,5 +77,25 @@ In this project, I recoded some functions of the C standard library as well as s
     <td><a href="./ft_substr.c"> substr </a></td>
     <td>Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.</td>
   </tr>
+  <tr>
+    <td><a href="./ft_split.c"> split </a></td>
+    <td>Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must be ended by a NULL pointer.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_putstr_fd.c"> putstr_fd </a></td>
+    <td>Outputs the string ’s’ to the given file descriptor.</td>
+  </tr>
 </table>
 
+### Memory Manipulation Functions
+
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="./ft_calloc.c"> calloc </a></td>
+    <td>The  calloc()  function  allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory. The memory is set to zero. If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free(). <br/> If the multiplication of nmemb and size would result in integer overflow, then calloc() returns an error.  By contrast, an integer overflow would not be detected in the following call to malloc(), with the result that an incorrectly sized block of memory would be allocated: `malloc(nmemb * size);`</td>
+  </tr>
+</table>
