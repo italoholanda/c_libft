@@ -18,6 +18,8 @@ In this second part, I coded a set of functions that are not included in libc or
 • substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd
 ```
 
+***
+
 ### String manipulation functions
 
 <table>
@@ -87,6 +89,8 @@ In this second part, I coded a set of functions that are not included in libc or
   </tr>
 </table>
 
+***
+
 ### Memory Manipulation Functions
 
 <table>
@@ -99,3 +103,5 @@ In this second part, I coded a set of functions that are not included in libc or
     <td>The  calloc()  function  allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory. The memory is set to zero. If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free(). <br/> If the multiplication of nmemb and size would result in integer overflow, then calloc() returns an error.  By contrast, an integer overflow would not be detected in the following call to malloc(), with the result that an incorrectly sized block of memory would be allocated: `malloc(nmemb * size);`</td>
   </tr>
 </table>
+
+***
