@@ -11,9 +11,18 @@ In this project, I recoded some functions of the C standard library as well as s
 
 ### String manipulation functions
 
-<ul>
-	<li>
-		<a href="">**strchr**</a>
-	</li>
-</ul>
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="#"> strchr </a></td>
+    <td>The strchr() function returns a pointer to the first occurrence of the character c in the string s.</td>
+  </tr>
+  <tr>
+    <td><a href="#"> strrchr </a></td>
+    <td>The strrchr() function returns a pointer to the last occurrence of the character c in the string s.</td>
+  </tr>
+</table>
 
