@@ -17,7 +17,7 @@ In this project, I recoded some functions of the C standard library as well as s
     <th>Description</th>
   </tr>
   <tr>
-    <td><a href="#"> strchr </a></td>
+    <td><a href="./ft_strchr.c"> strchr </a></td>
     <td>The strchr() function returns a pointer to the first occurrence of the character c in the string s.</td>
   </tr>
   <tr>
