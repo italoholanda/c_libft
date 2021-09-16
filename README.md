@@ -18,9 +18,11 @@ In this second part, I coded a set of functions that are not included in libc or
 • substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd
 ```
 
+## Summary of functions
+
 ***
 
-### String manipulation functions
+### String functions
 
 <table>
   <tr>
@@ -84,14 +86,18 @@ In this second part, I coded a set of functions that are not included in libc or
     <td>Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must be ended by a NULL pointer.</td>
   </tr>
   <tr>
-    <td><a href="./ft_putstr_fd.c"> putstr_fd </a></td>
-    <td>Outputs the string ’s’ to the given file descriptor.</td>
+    <td><a href="./ft_atoi.c"> atoi </a></td>
+    <td>The  atoi() function converts the initial portion of the string pointed to by nptr to int. The behavior is the same as strtol(nptr, NULL, 10);</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_itoa.c"> itoa </a></td>
+    <td>Allocates (with malloc(3)) and returns a string representing the integer received as an argument. Negative numbers must be handled.</td>
   </tr>
 </table>
 
 ***
 
-### Memory Manipulation Functions
+### Memory Manipulation functions
 
 <table>
   <tr>
@@ -99,9 +105,112 @@ In this second part, I coded a set of functions that are not included in libc or
     <th>Description</th>
   </tr>
   <tr>
+    <td><a href="./ft_bzero.c"> bzero </a></td>
+    <td>The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.</td>
+  </tr>
+  <tr>
     <td><a href="./ft_calloc.c"> calloc </a></td>
     <td>The  calloc()  function  allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory. The memory is set to zero. If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free(). <br/> If the multiplication of nmemb and size would result in integer overflow, then calloc() returns an error.  By contrast, an integer overflow would not be detected in the following call to malloc(), with the result that an incorrectly sized block of memory would be allocated: `malloc(nmemb * size);`</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_bzero.c"> bzero </a></td>
+    <td>The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_memchr.c"> memchr </a></td>
+    <td>The  memchr()  function  scans  the  initial n bytes of the memory area pointed to by s for the first instance of c. Both c and the bytes of the memory area pointed to by s are interpreted as unsigned char.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_memcmp.c"> memcmp </a></td>
+    <td>The memcmp() function compares the first n bytes (each interpreted as unsigned char) of the memory areas s1 and s2.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_memcpy.c"> memcpy </a></td>
+    <td>The  memcpy() function copies n bytes from memory area src to memory area dest.  The memory areas must not overlap.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_memmove.c"> memmove </a></td>
+    <td>The memmove() function copies n bytes from memory area src to memory area dest. The memory areas may overlap: copying takes place as though the bytes in src are first copied into a temporary array that does not overlap src or dest, and the bytes are then copied from the temporary array to dest.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_memset.c"> memset </a></td>
+    <td>The memset() function fills the first n bytes of the memory area pointed to by s with the constant byte c. </td>
   </tr>
 </table>
 
 ***
+
+### File Descriptor functions
+
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="./ft_putchar_fd.c"> putchar_fd </a></td>
+    <td>Outputs the character ’c’ to the given file descriptor.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_putstr_fd.c"> putstr_fd </a></td>
+    <td>Outputs the string ’s’ to the given file descriptor.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_putnbr_fd.c"> putnbr_fd </a></td>
+    <td>Outputs the integer ’n’ to the given file descriptor.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_putendl_fd.c"> putendl_fd </a></td>
+    <td>Outputs the string ’s’ to the given file descriptor, followed by a newline.</td>
+  </tr>
+</table>
+
+***
+
+### Char functions
+
+<table>
+  <tr>
+    <th>Function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="./ft_isalnum.c"> isalnum </a></td>
+    <td>Checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)).</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_isalpha.c"> isalpha </a></td>
+    <td>Checks  for  an  alphabetic  character;  in  the  standard "C" locale, it is equivalent to (isupper(c) || is lower(c)). In some locales, there may be additional characters for which isalpha() is true—letters which are neither uppercase nor lowercase.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_isascii.c"> isascii </a></td>
+    <td>Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_isdigit.c"> isdigit </a></td>
+    <td>Checks for a digit (0 through 9).</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_isprint.c"> isprintt </a></td>
+    <td>Checks for any printable character including space.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_tolower.c"> tolower </a></td>
+    <td>If c is an uppercase letter, tolower() returns its lowercase equivalent, if a lowercase representation exists in the current locale.  Otherwise, it returns c.  The tolower_l() function performs the same task, but uses the locale referred to by the locale handle locale.</td>
+  </tr>
+  <tr>
+    <td><a href="./ft_toupper.c"> toupper </a></td>
+    <td>If c is a lowercase letter, toupper() returns its uppercase equivalent, if an uppercase representation exists in the current locale.  Otherwise, it returns c. The toupper_l() function performs the same task, but uses the locale  referred to by the locale handle locale.</td>
+  </tr>
+</table>
+
+***
+
+## Makefile
+
+| Command | Usage |
+| --- | --- |
+| `make` | creates .o files for each function as well as the main library file, libft.a |
+| `make clean` | removes the .o files used to create the library |
+| `make fclean` | removes the .o & .a files used to create the library |
+| `make re` | removes all .o & .a files then remakes them |
