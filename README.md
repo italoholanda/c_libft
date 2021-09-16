@@ -20,8 +20,6 @@ In this second part, I coded a set of functions that are not included in libc or
 
 ## Summary of functions
 
-***
-
 ### String functions
 
 <table>
@@ -95,8 +93,6 @@ In this second part, I coded a set of functions that are not included in libc or
   </tr>
 </table>
 
-***
-
 ### Memory Manipulation functions
 
 <table>
@@ -138,8 +134,6 @@ In this second part, I coded a set of functions that are not included in libc or
   </tr>
 </table>
 
-***
-
 ### File Descriptor functions
 
 <table>
@@ -164,8 +158,6 @@ In this second part, I coded a set of functions that are not included in libc or
     <td>Outputs the string ’s’ to the given file descriptor, followed by a newline.</td>
   </tr>
 </table>
-
-***
 
 ### Char functions
 
@@ -203,8 +195,6 @@ In this second part, I coded a set of functions that are not included in libc or
     <td>If c is a lowercase letter, toupper() returns its uppercase equivalent, if an uppercase representation exists in the current locale.  Otherwise, it returns c. The toupper_l() function performs the same task, but uses the locale  referred to by the locale handle locale.</td>
   </tr>
 </table>
-
-***
 
 ## Makefile
 
