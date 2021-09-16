@@ -183,7 +183,7 @@ In this second part, I coded a set of functions that are not included in libc or
     <td>Checks for a digit (0 through 9).</td>
   </tr>
   <tr>
-    <td><a href="./ft_isprint.c"> isprintt </a></td>
+    <td><a href="./ft_isprint.c"> isprint </a></td>
     <td>Checks for any printable character including space.</td>
   </tr>
   <tr>
