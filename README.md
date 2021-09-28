@@ -97,10 +97,6 @@ In this second part, I coded a set of functions that are not included in libc or
     <th>Description</th>
   </tr>
   <tr>
-    <td><a href="./ft_bzero.c"> bzero </a></td>
-    <td>The bzero() function erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area.</td>
-  </tr>
-  <tr>
     <td><a href="./ft_calloc.c"> calloc </a></td>
     <td>The  calloc()  function  allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory. The memory is set to zero. If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free(). <br/> If the multiplication of nmemb and size would result in integer overflow, then calloc() returns an error.  By contrast, an integer overflow would not be detected in the following call to malloc(), with the result that an incorrectly sized block of memory would be allocated: `malloc(nmemb * size);`</td>
   </tr>
