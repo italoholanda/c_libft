@@ -5,18 +5,14 @@ In this project, I recoded some functions of the C standard library as well as s
 
 In this first part, I re-coded a set of libc functions as defined in your `man`. The functions have the same prototype and behavior as the originals <a href="https://www.freebsd.org/cgi/man.cgi">(BSD).</a>
 
-```
 • isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • memcpy • memmove • strlcpy • strlcat
 • toupper • tolower • strchr • strrchr • strncmp • memchr • memcmp • strnstr • atoi
-```
 
 ## Part 02
 
 In this second part, I coded a set of functions that are not included in libc or are included in a different form.
 
-```
 • substr • strjoin • strtrim • split • itoa • strmapi • striteri • putchar_fd • putstr_fd • putendl_fd • putnbr_fd
-```
 
 ## Summary of functions
 
